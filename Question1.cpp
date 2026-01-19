@@ -1,3 +1,5 @@
+//Accept two numbers and compute their sum
+
 #include<iostream>
 using namespace std;
 int main(){
