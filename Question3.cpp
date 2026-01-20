@@ -1,11 +1,11 @@
-//compute the area of the circle
+// convert fahrenheit temperature into celsius
 #include<iostream>
-using namespace std;
 int main(){
-    float radius;
-    cout<<"Enter the area of circle: ";
-    cin>>radius;
-    cout<<"The area of the circle is "<<(4*3.14*radius*radius);
+    float temperature;
+    std::cout<<"Enter temperature in fahrenheit: ";
+    std::cin>>temperature;
+    std::cout<<"Temperature in celsius is "<<(temperature-32)*(5.0/9.0);
     return 0;
+
 }
 
