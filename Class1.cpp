@@ -3,29 +3,28 @@
 
 #include<iostream>
 using namespace std;
-class Car
-{
- string brand;
- int make_year;
- 
- string colour;
- public:
- string type;
- void display(){
-    cout<<"\nBrand: "<<brand;
-    cout<<"\nMake_year: "<<make_year;
-    cout<<"\nType: "<<type;
-    cout<<"\nColour: "<<colour;
-}
-void car_entry(){
-    cout<<"Enter the brand, make year, type, colour";
-    cin>>brand>>make_year>>type>>colour;
- }
+class Car{
+    string brand;
+    float price;
+    public:
+    Car();
+    Car(string,float);
+    void display();
 };
+Car::Car(){
+    brand="NO BRAND";
+    price=0;
+}
+Car::Car(string a, float b){
+    brand=a;
+    price=b;
+}
+void Car::display(){
+    cout<<"\nBrand : "<<brand<<"\nPrice : "<<price;
+}
 int main(){
-    Car c1;
-    c1.car_entry();
-    c1.type="sedan";
-    c1.display();
-    return 0;
+Car c1,c2("Suzuki",10567.46);
+c1.display();
+c2.display();
+return 0;  
 }
